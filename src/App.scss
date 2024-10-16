@@ -1,0 +1,67 @@
+body {
+  font-family: "Bebas Neue Cyrillic";
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  font-family: "PT-Root-UI_Bold";
+  font-weight: 700;
+}
+
+.medium-text {
+  font-family: "PT-Root-UI_Medium";
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+}
+
+input,
+textarea,
+select,
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  font: inherit;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,113 @@
+.wrapper {
+  margin: 108px 0;
+
+  h1 {
+    font-family: "Rubik";
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #2d3242;
+  }
+
+  .main {
+    margin-top: 68px;
+    display: flex;
+    gap: 80px;
+
+    .main__image {
+      width: 434px;
+      height: 715px;
+      overflow: hidden;
+      flex-shrink: 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .main__widgets {
+      .text {
+        margin-top: 12px;
+        font-family: "PT-Root-UI_Medium";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 23.4px;
+        text-align: left;
+      }
+
+      .checkbox {
+        margin-top: 26px;
+
+        label {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+
+          p {
+            max-width: 418px;
+            font-family: "PT-Root-UI_Regular";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 17.6px;
+            text-align: left;
+            color: #818798;
+
+            a {
+              color: #2d97f9;
+            }
+          }
+
+          input {
+            width: 24px;
+            height: 24px;
+            border: 1px solid #01b9c5;
+            border-radius: 5px;
+            appearance: none;
+            position: relative;
+            cursor: pointer;
+
+            &:checked {
+              background-color: #01b9c5;
+            }
+
+            &:after {
+              content: "";
+              color: #fff;
+              position: absolute;
+              inset: 0;
+              display: flex;
+              background-image: url("/img/Arrow.svg");
+              background-repeat: no-repeat;
+              background-position: center;
+              opacity: 0;
+            }
+          }
+
+          input:checked:after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .button {
+      margin-top: 50px;
+    }
+
+    .privacy {
+      margin-top: 30px;
+      font-family: "PT-Root-UI_Regular";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18.2px;
+      text-align: left;
+      color: #818798;
+    }
+  }
+}

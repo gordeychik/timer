@@ -1,0 +1,50 @@
+.timer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .timer__numbers {
+    font-family: "BebasNeue-Regular";
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 61.8px;
+    text-align: center;
+    color: #01b9c5;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .dots {
+    position: absolute;
+    bottom: 5px;
+    left: 52px;
+  }
+
+  .timer__text {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      font-family: "PT-Root-UI_Bold";
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20.8px;
+      text-align: center;
+      color: #818798;
+    }
+  }
+}
+
+.redPrice {
+  .timer__numbers,
+  .timer__text {
+    color: #fd4d35;
+  }
+}

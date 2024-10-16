@@ -1,0 +1,119 @@
+.modalCard {
+  width: 100%;
+  background-color: #fff;
+  padding: 26px 26px 20px 26px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 2px solid #e7eaf1;
+
+  .name {
+    font-family: "Bebas Neue Cyrillic";
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #2d3242;
+  }
+
+  .oldPrice {
+    margin-top: 14px;
+    font-family: "PT-Root-UI_Bold";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+    color: #2d3242;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 50px;
+      border: 2px solid #fd4d35;
+      transform: rotate(24deg);
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 50px;
+        border: 2px solid #fd4d35;
+        transform: rotate(-24deg);
+      }
+  }
+
+  .price {
+    margin-top: 40px;
+    font-family: "PT-Root-UI_Bold";
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 50.6px;
+    text-align: left;
+    color: #2d3242;
+  }
+
+  .card__discount {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 100px;
+    right: 10px;
+
+    &:before {
+      content: "-30%";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      background-image: url("/img/Star.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: "PT-Root-UI_Medium";
+      font-size: 13.67px;
+      font-weight: 500;
+      line-height: 17.27px;
+      text-align: left;
+      color: #fff;
+    }
+  }
+}
+
+label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+
+  .radio {
+    position: absolute;
+    top: 26px;
+    right: 22px;
+  }
+
+  input[type="radio"] {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 1.5px solid #01b9c5;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s ease-in-out;
+
+    &:checked {
+      border-color: #01b9c5;
+      background-color: #01b9c5;
+    }
+  }
+
+  &:has(input:checked) .modalCard {
+    border: 2px solid #01b9c5;
+    background: #01b9c50d;
+  }
+}
